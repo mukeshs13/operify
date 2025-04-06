@@ -1,0 +1,273 @@
+$flaticon_xleb-font: "flaticon";
+
+@font-face {
+	font-family: $flaticon-font;
+	src: url("../fonts/flaticon.woff2?11f8cbc20fef7964827e7594777a13b1") format("woff2"),
+url("../fonts/flaticon.woff?11f8cbc20fef7964827e7594777a13b1") format("woff"),
+url("../fonts/flaticon.eot?11f8cbc20fef7964827e7594777a13b1#iefix") format("embedded-opentype"),
+url("../fonts/flaticon.ttf?11f8cbc20fef7964827e7594777a13b1") format("truetype"),
+url("../fonts/flaticon.svg?11f8cbc20fef7964827e7594777a13b1#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+	font-family: flaticon !important;
+	font-style: normal;
+	font-weight: normal !important;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_xleb-map: (
+	"group": "\f101",
+	"compass": "\f102",
+	"atom": "\f103",
+	"structure": "\f104",
+	"hour-glass": "\f105",
+	"scientist": "\f106",
+	"microscope": "\f107",
+	"laboratory": "\f108",
+	"atom-1": "\f109",
+	"calculator": "\f10a",
+	"test-tube": "\f10b",
+	"testing": "\f10c",
+	"brain": "\f10d",
+	"light": "\f10e",
+	"atom-2": "\f10f",
+	"ufo": "\f110",
+	"filter": "\f111",
+	"graph": "\f112",
+	"apple": "\f113",
+	"book": "\f114",
+	"brain-1": "\f115",
+	"candle": "\f116",
+	"capsule": "\f117",
+	"circuit": "\f118",
+	"clock": "\f119",
+	"container": "\f11a",
+	"dropper": "\f11b",
+	"electricity": "\f11c",
+	"experiment": "\f11d",
+	"flask": "\f11e",
+	"globe": "\f11f",
+	"gloves": "\f120",
+	"goggles": "\f121",
+	"injection": "\f122",
+	"ink": "\f123",
+	"jigsaw": "\f124",
+	"magnet": "\f125",
+	"microscope-1": "\f126",
+	"orbit": "\f127",
+	"projector": "\f128",
+	"radioactive": "\f129",
+	"rocket": "\f12a",
+	"satellite": "\f12b",
+	"scale": "\f12c",
+	"sperm": "\f12d",
+	"star": "\f12e",
+	"structure-1": "\f12f",
+	"attraction": "\f130",
+	"thermometer": "\f131",
+	"bacteria": "\f132",
+	"straight-quotes": "\f133",
+	"checked": "\f134",
+	"check-button": "\f135",
+	"play-button": "\f136",
+	"right-arrow": "\f137",
+	"check": "\f138",
+	"arrow-down": "\f139",
+	"arrow-up": "\f13a",
+	"phone-ringing": "\f13b",
+	"email": "\f13c",
+	"briefcase": "\f13d",
+	"placeholder": "\f13e",
+);
+
+.flaticon-group:before {
+	content: map-get($flaticon_xleb-map, "group");
+}
+.flaticon-compass:before {
+	content: map-get($flaticon_xleb-map, "compass");
+}
+.flaticon-atom:before {
+	content: map-get($flaticon_xleb-map, "atom");
+}
+.flaticon-structure:before {
+	content: map-get($flaticon_xleb-map, "structure");
+}
+.flaticon-hour-glass:before {
+	content: map-get($flaticon_xleb-map, "hour-glass");
+}
+.flaticon-scientist:before {
+	content: map-get($flaticon_xleb-map, "scientist");
+}
+.flaticon-microscope:before {
+	content: map-get($flaticon_xleb-map, "microscope");
+}
+.flaticon-laboratory:before {
+	content: map-get($flaticon_xleb-map, "laboratory");
+}
+.flaticon-atom-1:before {
+	content: map-get($flaticon_xleb-map, "atom-1");
+}
+.flaticon-calculator:before {
+	content: map-get($flaticon_xleb-map, "calculator");
+}
+.flaticon-test-tube:before {
+	content: map-get($flaticon_xleb-map, "test-tube");
+}
+.flaticon-testing:before {
+	content: map-get($flaticon_xleb-map, "testing");
+}
+.flaticon-brain:before {
+	content: map-get($flaticon_xleb-map, "brain");
+}
+.flaticon-light:before {
+	content: map-get($flaticon_xleb-map, "light");
+}
+.flaticon-atom-2:before {
+	content: map-get($flaticon_xleb-map, "atom-2");
+}
+.flaticon-ufo:before {
+	content: map-get($flaticon_xleb-map, "ufo");
+}
+.flaticon-filter:before {
+	content: map-get($flaticon_xleb-map, "filter");
+}
+.flaticon-graph:before {
+	content: map-get($flaticon_xleb-map, "graph");
+}
+.flaticon-apple:before {
+	content: map-get($flaticon_xleb-map, "apple");
+}
+.flaticon-book:before {
+	content: map-get($flaticon_xleb-map, "book");
+}
+.flaticon-brain-1:before {
+	content: map-get($flaticon_xleb-map, "brain-1");
+}
+.flaticon-candle:before {
+	content: map-get($flaticon_xleb-map, "candle");
+}
+.flaticon-capsule:before {
+	content: map-get($flaticon_xleb-map, "capsule");
+}
+.flaticon-circuit:before {
+	content: map-get($flaticon_xleb-map, "circuit");
+}
+.flaticon-clock:before {
+	content: map-get($flaticon_xleb-map, "clock");
+}
+.flaticon-container:before {
+	content: map-get($flaticon_xleb-map, "container");
+}
+.flaticon-dropper:before {
+	content: map-get($flaticon_xleb-map, "dropper");
+}
+.flaticon-electricity:before {
+	content: map-get($flaticon_xleb-map, "electricity");
+}
+.flaticon-experiment:before {
+	content: map-get($flaticon_xleb-map, "experiment");
+}
+.flaticon-flask:before {
+	content: map-get($flaticon_xleb-map, "flask");
+}
+.flaticon-globe:before {
+	content: map-get($flaticon_xleb-map, "globe");
+}
+.flaticon-gloves:before {
+	content: map-get($flaticon_xleb-map, "gloves");
+}
+.flaticon-goggles:before {
+	content: map-get($flaticon_xleb-map, "goggles");
+}
+.flaticon-injection:before {
+	content: map-get($flaticon_xleb-map, "injection");
+}
+.flaticon-ink:before {
+	content: map-get($flaticon_xleb-map, "ink");
+}
+.flaticon-jigsaw:before {
+	content: map-get($flaticon_xleb-map, "jigsaw");
+}
+.flaticon-magnet:before {
+	content: map-get($flaticon_xleb-map, "magnet");
+}
+.flaticon-microscope-1:before {
+	content: map-get($flaticon_xleb-map, "microscope-1");
+}
+.flaticon-orbit:before {
+	content: map-get($flaticon_xleb-map, "orbit");
+}
+.flaticon-projector:before {
+	content: map-get($flaticon_xleb-map, "projector");
+}
+.flaticon-radioactive:before {
+	content: map-get($flaticon_xleb-map, "radioactive");
+}
+.flaticon-rocket:before {
+	content: map-get($flaticon_xleb-map, "rocket");
+}
+.flaticon-satellite:before {
+	content: map-get($flaticon_xleb-map, "satellite");
+}
+.flaticon-scale:before {
+	content: map-get($flaticon_xleb-map, "scale");
+}
+.flaticon-sperm:before {
+	content: map-get($flaticon_xleb-map, "sperm");
+}
+.flaticon-star:before {
+	content: map-get($flaticon_xleb-map, "star");
+}
+.flaticon-structure-1:before {
+	content: map-get($flaticon_xleb-map, "structure-1");
+}
+.flaticon-attraction:before {
+	content: map-get($flaticon_xleb-map, "attraction");
+}
+.flaticon-thermometer:before {
+	content: map-get($flaticon_xleb-map, "thermometer");
+}
+.flaticon-bacteria:before {
+	content: map-get($flaticon_xleb-map, "bacteria");
+}
+.flaticon-straight-quotes:before {
+	content: map-get($flaticon_xleb-map, "straight-quotes");
+}
+.flaticon-checked:before {
+	content: map-get($flaticon_xleb-map, "checked");
+}
+.flaticon-check-button:before {
+	content: map-get($flaticon_xleb-map, "check-button");
+}
+.flaticon-play-button:before {
+	content: map-get($flaticon_xleb-map, "play-button");
+}
+.flaticon-right-arrow:before {
+	content: map-get($flaticon_xleb-map, "right-arrow");
+}
+.flaticon-check:before {
+	content: map-get($flaticon_xleb-map, "check");
+}
+.flaticon-arrow-down:before {
+	content: map-get($flaticon_xleb-map, "arrow-down");
+}
+.flaticon-arrow-up:before {
+	content: map-get($flaticon_xleb-map, "arrow-up");
+}
+.flaticon-phone-ringing:before {
+	content: map-get($flaticon_xleb-map, "phone-ringing");
+}
+.flaticon-email:before {
+	content: map-get($flaticon_xleb-map, "email");
+}
+.flaticon-briefcase:before {
+	content: map-get($flaticon_xleb-map, "briefcase");
+}
+.flaticon-placeholder:before {
+	content: map-get($flaticon_xleb-map, "placeholder");
+}
