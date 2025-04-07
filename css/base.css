@@ -22,13 +22,13 @@ INDEX:
 	--pbmit-global-color-rgb: 55, 114, 255;
 	--pbmit-secondary-color: #2a6564;
 	--pbmit-secondary-color-rgb: 0, 24, 55;
-	--pbmit-light-color: #fff1dce1;
+	--pbmit-light-color: #fff1dca8;
 	--pbmit-white-color: #ffffff;
     --pbmit-white-color-rgb: 255, 255, 255;
 	--pbmit-blackish-color: #2a6564;
 	--pbmit-blackish-color-rgb: 1, 25, 56;
 	--pbmit-link-color-normal: #2a6564;
-	--pbmit-link-color-hover: #3772ff;
+	--pbmit-link-color-hover: #2a6564;
 	--pbmit-responsive-breakpoint: 1200px;
 
 	--pbmit-body-typography-font-family: "Open Sans", sans-serif;
@@ -851,7 +851,7 @@ ul.pbmit-contact-info{
 	opacity: 1;
 }
 .pbmit-progress-wrap svg path {
-	fill:rgba(var(--pbmit-global-color-rgb),.2);
+	fill:#fff1dc;
 }
 .pbmit-progress-wrap svg.pbmit-progress-circle path {
 	stroke: var(--pbmit-global-color);

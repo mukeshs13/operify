@@ -680,7 +680,7 @@
 }
 .pbmit-ihbox-style-6 .pbmit-ihbox-svg svg ,
 .pbmit-ihbox-style-6 .pbmit-ihbox-icon svg{
-	fill: var(--pbmit-global-color);
+	fill: #ffa72a;
 }
 .pbmit-ihbox-style-6 .pbmit-content-number {
 	position: absolute;
@@ -2866,10 +2866,10 @@
 }
 .site-footer .pbmit-two-column-menu.widget ul li a,
 .site-footer .pbmit-timelist-list .pbmit-timelist-time{
-	color: #abc6e9;
+	color:white;
 }
 .site-footer .pbmit-two-column-menu.widget ul li a:hover{
-	color: var(--pbmit-global-color);
+	color: #ffa72a;
 }
 .site-footer .pbmit-timelist-list li{
 	padding: 0 0 10px 0;
@@ -2974,7 +2974,7 @@
 /*----------------------------------------*/
 .pbmit-title-bar-wrapper{
 	background-color: rgba(0,0,0,0.5);
-	background-image: url(../images/bg/titlebar.jpg);
+	background-image: url(../images/homepage-2/ContactUs-Banner.png);
 	background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
