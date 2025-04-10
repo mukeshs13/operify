@@ -22,7 +22,7 @@ INDEX:
 	--pbmit-global-color-rgb: 55, 114, 255;
 	--pbmit-secondary-color: #2a6564;
 	--pbmit-secondary-color-rgb: 0, 24, 55;
-	--pbmit-light-color: #fff1dca8;
+	--pbmit-light-color: #eaf1ff;
 	--pbmit-white-color: #ffffff;
     --pbmit-white-color-rgb: 255, 255, 255;
 	--pbmit-blackish-color: #2a6564;
@@ -851,7 +851,7 @@ ul.pbmit-contact-info{
 	opacity: 1;
 }
 .pbmit-progress-wrap svg path {
-	fill:#fff1dc;
+	fill:rgba(var(--pbmit-global-color-rgb),.2);
 }
 .pbmit-progress-wrap svg.pbmit-progress-circle path {
 	stroke: var(--pbmit-global-color);

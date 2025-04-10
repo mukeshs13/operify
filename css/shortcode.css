@@ -62,6 +62,9 @@
 }
 .pbmit-heading-subheading .pbmit-heading-desc{
 	margin-top: 25px;
+	text-align: justify;
+	color: #555555;
+	font-size: medium;
 }
 .pbmit-bg-color-global .pbmit-heading-subheading .pbmit-subtitle,
 .pbmit-bg-color-blackish .pbmit-heading-subheading .pbmit-subtitle,
@@ -680,7 +683,7 @@
 }
 .pbmit-ihbox-style-6 .pbmit-ihbox-svg svg ,
 .pbmit-ihbox-style-6 .pbmit-ihbox-icon svg{
-	fill: #ffa72a;
+	fill: var(--pbmit-global-color);
 }
 .pbmit-ihbox-style-6 .pbmit-content-number {
 	position: absolute;
@@ -764,7 +767,7 @@
 }
 .pbmit-ihbox-style-7 .pbmit-ihbox-icon-wrapper,
 .pbmit-ihbox-style-7 .pbmit-ihbox-svg-wrapper{
-	background-color: var(--pbmit-light-color);
+	background-color: white;
 	border-radius: 50%;
 	height: 70px;
 	width: 70px;
@@ -2761,162 +2764,152 @@
 /*----------------------------------------*/
 /*  08 - Footer
 /*----------------------------------------*/
-.site-footer{
-	font-size: 16px;
-	position: relative;
-	margin: 0 40px;
-    padding-top: 100px;
+.site-footer {
+    font-size: 16px;
+    position: relative;
+    margin: 0 20px;
+    padding-top: 50px;
     border-radius: 30px;
-	background-image: url(../images/bg/footer-pattern.png);
+    background-image: url(../images/bg/footer-pattern.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: auto;
     background-attachment: scroll;
-	color: var(--pbmit-white-color);
-	overflow: hidden;
+    color: var(--pbmit-white-color);
+    overflow: hidden;
 }
-.site-footer .pbmit-footer-big-area .pbmit-footer-logo img{
+
+.site-footer .pbmit-footer-widget-area {
+    padding-bottom: 50px;
+}
+
+.site-footer .pbmit-footer-widget-area .row {
+    display: flex; /* Use flexbox for the row */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Distribute space evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.site-footer .pbmit-footer-logo {
+    padding-top: 30px; /* Match widget padding */
+}
+
+.site-footer .pbmit-footer-logo img {
     max-height: 80px;
 }
-.site-footer .pbmit-footer-newsletter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(var(--pbmit-white-color-rgb), .15);
-}
-.site-footer .pbmit-footer-newsletter .pbmit-footer-news-title {
-    font-size: 40px;
-    line-height: 50px;
-    margin: 0;
-    padding-right: 80px;
-    font-weight: 600;
-	color: var(--pbmit-white-color);
-}
-.site-footer .pbmit-footer-newsletter .pbmit-news-wrap {
+
+.site-footer .widget {
     position: relative;
-    flex: 1;
+    padding-top: 30px;
+    flex: 1; /* Allow widgets to share space */
+    min-width: 200px; /* Minimum width to prevent collapse */
 }
-.site-footer .pbmit-footer-newsletter input[type="email"] {
-    height: 65px;
-    padding-right: 220px;
-    padding-left: 38px;
-    color: var(--pbmit-blackish-color);
-    background-color: var(--pbmit-white-color);
-    border-radius: 40px;
-    border: 0;
-	margin-bottom: 0;
+
+.pbmit-footer-widget-area .pbmit-social-links li.pbmit-social-li {
+    margin: 0 15px 5px 0;
 }
-.site-footer .pbmit-footer-newsletter input::placeholder{
-	color: rgba(var(--pbmit-blackish-color-rgb) ,.9);
-}
-.site-footer .pbmit-footer-newsletter button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    border-radius: 30px;
-    margin-right: 0;
-	transition: all .4s ease-in;
-    display: flex;
-    align-items: center;
-    padding: 12px 35px;
-}
-.site-footer .pbmit-footer-newsletter button:hover{
-	background-color: rgba(var(--pbmit-global-color-rgb),.8);
-}
-.site-footer .pbmit-footer-widget-area{
-	padding-bottom: 100px;
-}	
-.site-footer .widget{
-	position: relative;
-	padding-top: 65px;
-}
-.pbmit-footer-widget-area .pbmit-social-links li.pbmit-social-li{
-	margin: 0 15px 5px 0;
-}
+
 .pbmit-footer-widget-area .pbmit-social-links li.pbmit-social-li a {
     font-size: 14px;
     display: inline-block;
-	color: var(--pbmit-white-color);
+    color: var(--pbmit-white-color);
 }
-.pbmit-footer-widget-area .pbmit-social-links li.pbmit-social-li a:hover{
-	color: var(--pbmit-global-color);
+
+.pbmit-footer-widget-area .pbmit-social-links li.pbmit-social-li a:hover {
+    color: #faae31;
 }
+
 .pbmit-footer-widget-area .widget .widget-title {
     font-size: 20px;
     line-height: 30px;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
     letter-spacing: 0px;
     color: var(--pbmit-white-color);
     text-transform: capitalize;
     font-style: normal;
 }
+
 .site-footer .pbmit-two-column-menu.widget ul {
     display: flex;
     flex-wrap: wrap;
 }
-.site-footer .pbmit-two-column-menu.widget ul>li {
+
+.site-footer .pbmit-two-column-menu.widget ul > li {
     width: 50%;
-	line-height: 20px;
-	padding: 0 0 10px 0;
+    line-height: 20px;
+    padding: 0 0 10px 0;
 }
-.site-footer .pbmit-two-column-menu.widget ul>li:last-child{
-	padding-bottom: 0;
+
+.site-footer .pbmit-two-column-menu.widget ul > li:last-child {
+    padding-bottom: 0;
 }
+
 .site-footer .pbmit-two-column-menu.widget ul li a,
-.site-footer .pbmit-timelist-list .pbmit-timelist-time{
-	color:white;
+.site-footer .pbmit-timelist-list .pbmit-timelist-time {
+    color: #ffffff;
 }
-.site-footer .pbmit-two-column-menu.widget ul li a:hover{
-	color: #ffa72a;
+
+.site-footer .pbmit-two-column-menu.widget ul li a:hover {
+    color: #ffa72a;
 }
-.site-footer .pbmit-timelist-list li{
-	padding: 0 0 10px 0;
-	line-height: 20px;
+
+.site-footer .pbmit-timelist-list li {
+    padding: 0 0 10px 0;
+    line-height: 20px;
 }
-.site-footer .pbmit-timelist-list li:last-child{
-	padding-bottom: 0;
+
+.site-footer .pbmit-timelist-list li:last-child {
+    padding-bottom: 0;
 }
+
 .site-footer .pbmit-contact-widget-lines {
     display: inline-grid;
 }
+
 .site-footer .pbmit-contact-widget-lines .pbmit-base-icon-phone {
     font-size: 20px;
     font-weight: 600;
     order: 2;
     padding: 10px 0 0 0;
 }
-.site-footer .pbmit-contact-widget-lines .pbmit-base-icon-email{
-	font-size: 14px;
-	text-decoration: underline;
+
+.site-footer .pbmit-contact-widget-lines .pbmit-base-icon-email {
+    font-size: 14px;
+    text-decoration: underline;
 }
+
 .site-footer .pbmit-contact-widget-line::before {
     margin-right: 15px;
     font-size: 15px;
 }
-.site-footer .pbmit-contact-widget-lines a{
-	color: rgba(var(--pbmit-white-color-rgb), 1);
+
+.site-footer .pbmit-contact-widget-lines a {
+    color: rgba(var(--pbmit-white-color-rgb), 1);
 }
-.site-footer .pbmit-contact-widget-lines a:hover{
-	color: rgba(var(--pbmit-white-color-rgb),.8);
+
+.site-footer .pbmit-contact-widget-lines a:hover {
+    color: rgba(var(--pbmit-white-color-rgb), .8);
 }
-.site-footer .pbmit-timelist-list .pbmit-timelist-time{
-	font-weight: 400;
-	font-size: 15px;
+
+.site-footer .pbmit-timelist-list .pbmit-timelist-time {
+    font-weight: 400;
+    font-size: 15px;
 }
-.site-footer .pbmit-footer-text-area>.container{
-	position: relative;
+
+.site-footer .pbmit-footer-text-area > .container {
+    position: relative;
 }
-.site-footer .pbmit-footer-text-inner{
-	font-size: 14px;
-	padding: 20px 35px;
+
+.site-footer .pbmit-footer-text-inner {
+    font-size: 14px;
+    padding: 20px 35px;
     border-radius: 30px 30px 0 0;
     background-color: var(--pbmit-white-color);
 }
+
 .site-footer .pbmit-footer-text-inner:before,
-.site-footer .pbmit-footer-text-inner:after{
-	content: "";
+.site-footer .pbmit-footer-text-inner:after {
+    content: "";
     position: absolute;
     background-color: transparent;
     bottom: 0;
@@ -2924,36 +2917,45 @@
     width: 20px;
     box-shadow: 0 20px 0 0 var(--pbmit-white-color);
 }
+
 .site-footer .pbmit-footer-text-inner::before {
     left: -8px;
     border-bottom-right-radius: 20px;
 }
-.site-footer .pbmit-footer-text-inner:after{
-	right: -8px;
+
+.site-footer .pbmit-footer-text-inner:after {
+    right: -8px;
     border-bottom-left-radius: 20px;
 }
+
 .site-footer .pbmit-footer-copyright-text-area,
-.site-footer .pbmit-footer-copyright-text-area a{
-	color: #565656;
+.site-footer .pbmit-footer-copyright-text-area a {
+    color: #565656;
 }
-.site-footer .pbmit-footer-copyright-text-area a:hover{
-	color: var(--pbmit-global-color);
+
+.site-footer .pbmit-footer-copyright-text-area a:hover {
+    color: var(--pbmit-global-color);
 }
-.site-footer .pbmit-footer-menu-area{
-	float: right;
+
+.site-footer .pbmit-footer-menu-area {
+    float: right;
 }
-.site-footer .pbmit-footer-menu-area .pbmit-footer-menu{
-	display: flex;
+
+.site-footer .pbmit-footer-menu-area .pbmit-footer-menu {
+    display: flex;
 }
-.site-footer .pbmit-footer-menu-area .pbmit-footer-menu li{
-	position: relative;
-	padding: 0 10px;
+
+.site-footer .pbmit-footer-menu-area .pbmit-footer-menu li {
+    position: relative;
+    padding: 0 10px;
 }
-.site-footer .pbmit-footer-menu-area .pbmit-footer-menu li:last-child{
-	padding-right: 0;
+
+.site-footer .pbmit-footer-menu-area .pbmit-footer-menu li:last-child {
+    padding-right: 0;
 }
-.site-footer .pbmit-footer-menu-area .pbmit-footer-menu li:not(:first-child):before{
-	content: "";
+
+.site-footer .pbmit-footer-menu-area .pbmit-footer-menu li:not(:first-child):before {
+    content: "";
     position: absolute;
     height: 15px;
     width: 1px;
@@ -2962,11 +2964,13 @@
     top: 50%;
     transform: translate(0, -50%);
 }
-.site-footer .pbmit-footer-menu-area .pbmit-footer-menu li a{
-	color: #666666;
+
+.site-footer .pbmit-footer-menu-area .pbmit-footer-menu li a {
+    color: #666666;
 }
-.site-footer .pbmit-footer-menu-area .pbmit-footer-menu li a:hover{
-	color: var(--pbmit-global-color);
+
+.site-footer .pbmit-footer-menu-area .pbmit-footer-menu li a:hover {
+    color: var(--pbmit-global-color);
 }
 
 /*----------------------------------------*/
@@ -2974,7 +2978,7 @@
 /*----------------------------------------*/
 .pbmit-title-bar-wrapper{
 	background-color: rgba(0,0,0,0.5);
-	background-image: url(../images/homepage-2/ContactUs-Banner.png);
+	background-image: url(../images/bg/titlebar.jpg);
 	background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

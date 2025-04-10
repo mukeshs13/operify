@@ -49,6 +49,29 @@ body {
 		margin: 0 20px;
 	}
 }
+@media (max-width: 1024px) {
+    .pbmit-video-content {
+        padding: 100px 0;
+    }
+    
+    .pbmit-title-second {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pbmit-video-content {
+        padding: 70px 0;
+    }
+    
+    .pbmit-title-second {
+        font-size: 28px;
+    }
+    
+    .pbmit-sub-title {
+        font-size: 16px;
+    }
+}
 
 @media (max-width: 1500px){
 	/*=== Header ===*/
@@ -346,12 +369,13 @@ body {
 		-ms-transform: translateX(400px);
 		transform: translateX(400px);
 		opacity: 0;
+		
 	}
 	.active .pbmit-menu-wrap{
 		right: 0px;
 		visibility: visible;
 		opacity: 1;
-		overflow-y: scroll;
+		overflow-y: visible;
 		-webkit-transform: translateX(0);
 		-ms-transform: translateX(0);
 		transform: translateX(0);

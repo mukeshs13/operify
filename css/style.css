@@ -45,6 +45,61 @@ body{
 		opacity: 1;
 	}
 }
+/* Full-width video background styles */
+.pbmit-video-area {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.pbmit-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the area without distortion */
+    z-index: 0;
+}
+
+.pbmit-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 1;
+}
+
+.pbmit-video-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 150px 0; /* Adjust spacing to match your current design */
+}
+
+.pbmit-sub-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.pbmit-title-second {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+
+.pbmit-bottom-left-corner {
+    left: 0;
+    bottom: 0;
+}
+
+
 .about-us-one-left-box{
 	background-image: url(../images/homepage-1/bg/about-img-01.jpg);
 	background-position: center center;
@@ -91,6 +146,7 @@ body{
 	margin-top: -18px;
 	color: var(--pbmit-white-color);
 }
+
 .laboratoty-tools-img{
 	mix-blend-mode: luminosity;
 }
@@ -125,7 +181,7 @@ body{
 	color: var(--pbmit-secondary-color);
 }
 .contact-one-bg{
-	background-image: url(../images/homepage-1/bg/contact-bg-left-col.jpg);
+	background-image: url(../images/homepage-1/bg/question.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -286,7 +342,7 @@ body{
 	color: rgba(var(--pbmit-blackish-color-rgb), 0.5);
 }
 .about-two-left-box img{
-	-webkit-mask-image: url(../images/homepage-2/bg/about-left-mask.png);
+	-webkit-mask-image: url(/images/homepage-2/about-left-mask.png);
     -webkit-mask-size: contain;
     -webkit-mask-position: center center;
     -webkit-mask-repeat: no-repeat;
