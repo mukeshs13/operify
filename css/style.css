@@ -92,7 +92,12 @@ body{
     margin-top: 0;
     line-height: 1.2;
 }
-
+.footer-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+}
 
 .pbmit-bottom-left-corner {
     left: 0;
@@ -349,7 +354,7 @@ body{
 	border-radius: 30px;
 }
 .about-section-two{
-	padding: 90px 0px 90px 80px;
+	padding: 40px 0px 40px 80px;
 }
 .about-two-left-box{
 	padding-right: 100px;
