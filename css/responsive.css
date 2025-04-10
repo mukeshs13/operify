@@ -2036,7 +2036,7 @@ body {
 		color: var(--pbmit-blackish-color);
     }
 	.main-menu ul > li.dropdown > a:after{
-		content: "";
+	
 		position: absolute;
 		right: -29px;
 		top: 50%;
