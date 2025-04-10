@@ -3587,10 +3587,11 @@
 	}
 }
 .pbmit-slider-three .pbmit-slider-content .pbmit-title-second{
-	font-size: 60px;
+	font-size: 70px;
 	line-height: 60px;
 	color: var(--pbmit-white-color);
 	font-family: "Raleway", serif;
+	
 }
 .pbmit-slider-three .pbmit-slider-content .pbmit-desc{
 	font-size: 18px;
