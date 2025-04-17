@@ -45,10 +45,11 @@
 
 		<!-- Header Main Area -->
 		<header class="site-header header-style-3">
-			<div class="pbmit-main-header-area pbmit-bg-color-white " style="position: fixed; width: 100%; z-index: 1000;">
-				<div class="container-fluid">
+			<div class="pbmit-main-header-area pbmit-bg-color-white"
+				style="position: fixed; z-index: 1000; width: 100%;">
+				<div class="container"> <!-- Changed from container-fluid to container -->
 					<div class="pbmit-header-content d-flex justify-content-between align-items-center">
-						<div class="pbmit-logo-area">
+						<div class="pbmit-logo-area" style="flex: 0 0 auto; margin-right: 20px;">
 							<div class="site-branding">
 								<h1 class="site-title">
 									<a href="index.html">
@@ -57,9 +58,9 @@
 								</h1>
 							</div>
 						</div>
-						<div class="pbmit-menu-area">
+						<div class="pbmit-menu-area" style="flex: 1 1 auto;">
 							<div class="site-navigation">
-								<nav class="main-menu navbar-expand-xl navbar-light">
+								<nav class="main-menu navbar-expand-lg navbar-light"> <!-- Changed from xl to lg -->
 									<div class="navbar-header">
 										<!-- Toggle Button -->
 										<button class="navbar-toggler" type="button">
@@ -78,7 +79,8 @@
 														transform="translate(0 25.456) rotate(-45)"></rect>
 												</svg>
 											</span>
-											<ul class="navigation clearfix">
+											<ul class="navigation clearfix d-flex justify-content-start">
+												<!-- Added d-flex and justify-content -->
 												<!-- <li class="dropdown active">
 													<a href="#">Home</a>
 													<ul>
@@ -166,17 +168,25 @@
 														<li><a href="blog-single-details.html">Blog Single Details</a></li>
 													</ul>
 												</li> -->
-												<li><a href="#">About Us</a></li>
+												<li class="dropdown">
+													<a href="#">About Us</a>
+													<ul>
+														<li><a href="about-us.html">Company</a></li>
+														<li><a href="our-team.html">Our Leadership Team</a></li>
+														<li><a href="contact-us.html">Get in Touch</a></li>
+														<li><a href="#">career</a></li>
+													</ul>
+												</li>
 											</ul>
 										</div>
 									</div>
 								</nav>
 							</div>
 						</div>
-						<div class="pbmit-right-box d-flex align-items-center">
+						<div class="pbmit-right-box d-flex align-items-center" style="flex: 0 0 auto;">
 							<!-- <div class="pbmit-header-button">
 								<a href="tel:+1(212)-255-511">
-									<span class="pbmit-header-button-text-1">+1(212)-255-511</span>		
+									<span class="pbmit-header-button-text-1">+1(212)-255-511</span>        
 								</a>
 							</div> -->
 							<div class="pbmit-header-search-btn">
@@ -209,7 +219,6 @@
 					<div class="swiper-wrapper">
 						<!-- Slide1 -->
 						<div class="swiper-slide">
-							<div class="pbmit-bg-overlay"></div>
 							<div class="pbmit-slider-item">
 								<video autoplay muted loop id="background-video" class="pbmit-video-bg">
 									<source src="images/homepage-2/DNA-BG.mp4" type="video/mp4">
@@ -218,30 +227,17 @@
 									Your browser does not support the video tag.
 								</video>
 								<div class="container">
-									<h5 class="pbmit-sub-title transform-delay-1">#WebsiteUnderConstruction</h5>
-									<!-- <h2 class="pbmit-title transform-left transform-delay-2">Excellence</h2> -->
-									<h4 class="pbmit-title-second transform-bottom transform-delay-4"
-										style="color: #ffffff; font-size: 70px;">Unleash the Genomic Secrets <br>with
-										Us!</h4>
-									<!-- <div class="pbmit-desc transform-bottom transform-delay-3">
-										Hire us! We are a professional cleaning company offering services.
-									</div> -->
-									<!-- <div class="pbmit-button transform-bottom transform-delay-5">
-										<a class="pbmit-btn pbmit-btn-hover-blackish" href="services.html">
-											<span class="pbmit-button-content-wrapper">
-												<span class="pbmit-button-icon">
-													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-														<path d="m31 50.979c-.362.007-.727-.081-1.049-.28-.929-.572-1.212-1.814-.653-2.742.047-.082 5.886-9.826 17.032-15.958h-43.33c-1.103 0-2-.897-2-2s.897-2 2-2h43.33c-11.084-6.097-16.989-15.884-17.047-15.982-.547-.934-.244-2.177.689-2.73.946-.561 2.192-.236 2.757.715.909 1.45 9.433 14.449 24.722 18.046.915.225 1.549 1.026 1.549 1.952s-.63 1.729-1.532 1.948c-15.354 3.61-23.849 16.626-24.767 18.099-.36.577-1.025.919-1.7.932z"></path>
-													</svg>
-												</span>
-												<span class="pbmit-button-text">Our Services</span>
-											</span>
-										</a>
-									</div> -->
+									<div class="pbmit-slider-content">
+										<h5 class="pbmit-sub-title transform-right transform-delay-1">
+											<span>#WEBSITEUNDERCONSTRUCTION</span>
+										</h5>
+										<h2 class="pbmit-title transform-right transform-delay-2">
+											<span>Unleash the genomic Secrets <br> with Us!</span>
+										</h2>
+									</div>
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<div class="pbmit-bottom-shape">
@@ -297,11 +293,15 @@
 											<div class="col-md-6">
 												<div class="pbminfotech-ele-fid-style-1">
 													<div class="pbmit-fld-contents d-flex align-items-center">
-														<div class="pbmit-ihbox-icon">
-															<div class="pbmit-ihbox-icon-wrapper pbmit-icon-type-icon"
-																style="background-color: #2a6564; border-radius: 50%; height: 70px; width: 70px; display: grid; justify-content: center; align-items: center;">
-																<img src="images/homepage-2/NGS-Icons-44.svg"
-																	class="img-fluid" width="50" alt="">
+														<div class="pbmit-circle-outer" data-digit="0"
+															data-fill="#3772ff" data-emptyfill="" data-before=""
+															data-after="<sup>%</sup>" data-thickness="2"
+															data-size="121">
+															<div class="pbmit-circle">
+																<div class="pbmit-fid-inner">
+																	<img src="images/homepage-2/NGS-Icons-44.svg"
+																		class="img-fluid" width="50" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="pbmit-fid-sub">
@@ -315,11 +315,15 @@
 											<div class="col-md-6 pt-md-0 pt-4">
 												<div class="pbminfotech-ele-fid-style-1">
 													<div class="pbmit-fld-contents d-flex align-items-center">
-														<div class="pbmit-ihbox-icon">
-															<div class="pbmit-ihbox-icon-wrapper pbmit-icon-type-icon"
-																style="background-color: #2a6564; border-radius: 50%; height: 70px; width: 70px; display: grid; justify-content: center; align-items: center;">
-																<img src="images/homepage-2/NGS-Icons-45.svg"
-																	class="img-fluid" width="50" alt="">
+														<div class="pbmit-circle-outer" data-digit="0"
+															data-fill="#3772ff" data-emptyfill="" data-before=""
+															data-after="<sup>%</sup>" data-thickness="2"
+															data-size="121">
+															<div class="pbmit-circle">
+																<div class="pbmit-fid-inner">
+																	<img src="images/homepage-2/NGS-Icons-45.svg"
+																		class="img-fluid" width="50" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="pbmit-fid-sub">
@@ -415,8 +419,10 @@
 											</h2>
 										</div>
 										<div class="pbmit-content-wrapper">
-											<div class="pbmit-heading-desc">Advanced imagistic prowess of the Illumina
-												sequencing platform enables accurate acquisition of sequential data.
+											<div class="pbmit-heading-desc">Advanced sequencing platforms provide highly
+												accurate DNA/RNA data, detecting even minor variations.
+												This precision drives breakthroughs in health, diagnostics, agriculture,
+												and molecular biology.
 											</div>
 										</div>
 									</div>
@@ -808,11 +814,12 @@
 											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 												<h4 class="pbmit-hide">Client 1</h4>
 												<div class="pbmit-client-hover-img">
-													<img src="images/client/aiims.png" alt="" height="130" width="230">
+													<img src="images/client/ashoka.png" alt="" width="200" height="100" style="object-fit: contain;">
 												</div>
 												<div class="pbmit-featured-img-wrapper">
 													<div class="pbmit-featured-wrapper">
-														<img src="images/client/aiims.png" class="img-fluid" alt="">
+														<img src="images/client/ashoka.png"  alt=""
+															width="200" height="100" style="object-fit: contain;">
 													</div>
 												</div>
 											</div>
@@ -824,11 +831,12 @@
 											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 												<h4 class="pbmit-hide">Client 1</h4>
 												<div class="pbmit-client-hover-img">
-													<img src="images/client/dipas.png" alt="" height="130" width="230">
+													<img src="images/client/BRIC.png" alt="" width="200" height="100" style="object-fit: contain;">
 												</div>
 												<div class="pbmit-featured-img-wrapper">
 													<div class="pbmit-featured-wrapper">
-														<img src="images/client/dipas.png" class="img-fluid" alt="">
+														<img src="images/client/BRIC.png" alt=""
+															width="200" height="100" style="object-fit: contain;">
 													</div>
 												</div>
 											</div>
@@ -840,11 +848,12 @@
 											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 												<h4 class="pbmit-hide">Client 1</h4>
 												<div class="pbmit-client-hover-img">
-													<img src="images/client/bhu.png" alt="" height="130" width="230">
+													<img src="images/client/csir.png" alt="" width="200" height="100" style="object-fit: contain;">
 												</div>
 												<div class="pbmit-featured-img-wrapper">
 													<div class="pbmit-featured-wrapper">
-														<img src="images/client/bhu.png" class="img-fluid" alt="">
+														<img src="images/client/csir.png" alt=""
+															width="200" height="100" style="object-fit: contain;">
 													</div>
 												</div>
 											</div>
@@ -856,11 +865,12 @@
 											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 												<h4 class="pbmit-hide">Client 1</h4>
 												<div class="pbmit-client-hover-img">
-													<img src="images/client/iari.png" alt="" height="130" width="230">
+													<img src="images/client/drdo.png" alt="" width="200" height="100" style="object-fit: contain;">
 												</div>
 												<div class="pbmit-featured-img-wrapper">
 													<div class="pbmit-featured-wrapper">
-														<img src="images/client/iari.png" class="img-fluid" alt="">
+														<img src="images/client/drdo.png" alt=""
+															width="200" height="100" style="object-fit: contain;">
 													</div>
 												</div>
 											</div>
@@ -872,11 +882,12 @@
 											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 												<h4 class="pbmit-hide">Client 1</h4>
 												<div class="pbmit-client-hover-img">
-													<img src="images/client/kgmu.png" alt="" height="130" width="230">
+													<img src="images/client/duac.png" alt="" width="200" height="100" style="object-fit: contain;">
 												</div>
 												<div class="pbmit-featured-img-wrapper">
 													<div class="pbmit-featured-wrapper">
-														<img src="images/client/kgmu.png" class="img-fluid" alt="">
+														<img src="images/client/duac.png" alt=""
+															width="200" height="100" style="object-fit: contain;">
 													</div>
 												</div>
 											</div>
@@ -888,12 +899,13 @@
 											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 												<h4 class="pbmit-hide">Client 1</h4>
 												<div class="pbmit-client-hover-img">
-													<img src="images/client/manipal.png" alt="" height="130"
-														width="230">
+													<img src="images/client/icmr-niv.jpg" alt="" width="200"
+														height="100" style="object-fit: contain;">
 												</div>
 												<div class="pbmit-featured-img-wrapper">
 													<div class="pbmit-featured-wrapper">
-														<img src="images/client/manipal.png" class="img-fluid" alt="">
+														<img src="images/client/icmr-niv.jpg" alt=""
+															width="200" height="100" style="object-fit: contain;">
 													</div>
 												</div>
 											</div>
@@ -905,11 +917,12 @@
 											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 												<h4 class="pbmit-hide">Client 1</h4>
 												<div class="pbmit-client-hover-img">
-													<img src="images/client/aiims.png" alt="" height="130" width="230">
+													<img src="images/client/iimr.png" alt="" width="200" height="100" style="object-fit: contain;">
 												</div>
 												<div class="pbmit-featured-img-wrapper">
 													<div class="pbmit-featured-wrapper">
-														<img src="images/client/aiims.png" class="img-fluid" alt="">
+														<img src="images/client/iimr.png" alt=""
+															width="200" height="100" style="object-fit: contain;">
 													</div>
 												</div>
 											</div>
@@ -921,11 +934,81 @@
 											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 												<h4 class="pbmit-hide">Client 1</h4>
 												<div class="pbmit-client-hover-img">
-													<img src="images/client/iari.png" alt="" height="130" width="230">
+													<img src="images/client/iiserb.png" alt="" width="200" height="100" style="object-fit: contain;">
 												</div>
 												<div class="pbmit-featured-img-wrapper">
 													<div class="pbmit-featured-wrapper">
-														<img src="images/client/iari.png" class="img-fluid" alt="">
+														<img src="images/client/iiserb.png" alt=""
+															width="200" height="100" style="object-fit: contain;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</article>
+									<!-- Slide9 -->
+									<article class="pbmit-client-style-1 swiper-slide">
+										<div class="pbmit-border-wrapper">
+											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+												<h4 class="pbmit-hide">Client 1</h4>
+												<div class="pbmit-client-hover-img">
+													<img src="images/client/ilbs.jpg" alt="" width="200" height="100" style="object-fit: contain;">
+												</div>
+												<div class="pbmit-featured-img-wrapper">
+													<div class="pbmit-featured-wrapper">
+														<img src="images/client/ilbs.jpg" alt=""
+															width="200" height="100" style="object-fit: contain;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</article>
+									<!-- Slide10 -->
+									<article class="pbmit-client-style-1 swiper-slide">
+										<div class="pbmit-border-wrapper">
+											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+												<h4 class="pbmit-hide">Client 1</h4>
+												<div class="pbmit-client-hover-img">
+													<img src="images/client/manipal.png" alt="" width="200"
+														height="100" style="object-fit: contain;">
+												</div>
+												<div class="pbmit-featured-img-wrapper">
+													<div class="pbmit-featured-wrapper">
+														<img src="images/client/manipal.png" alt=""
+															width="200" height="100" style="object-fit: contain;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</article>
+									<!-- Slide11 -->
+									<article class="pbmit-client-style-1 swiper-slide">
+										<div class="pbmit-border-wrapper">
+											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+												<h4 class="pbmit-hide">Client 1</h4>
+												<div class="pbmit-client-hover-img">
+													<img src="images/client/rani.png" alt="" width="200" height="100" style="object-fit: contain;">
+												</div>
+												<div class="pbmit-featured-img-wrapper">
+													<div class="pbmit-featured-wrapper">
+														<img src="images/client/rani.png" alt=""
+															width="200" height="100" style="object-fit: contain;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</article>
+									<!-- Slide12 -->
+									<article class="pbmit-client-style-1 swiper-slide">
+										<div class="pbmit-border-wrapper">
+											<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+												<h4 class="pbmit-hide">Client 1</h4>
+												<div class="pbmit-client-hover-img">
+													<img src="images/client/Ouat.png" alt="" width="200" height="100" style="object-fit: contain;">
+												</div>
+												<div class="pbmit-featured-img-wrapper">
+													<div class="pbmit-featured-wrapper">
+														<img src="images/client/Ouat.png" alt=""
+															width="200" height="100" style="object-fit: contain;">
 													</div>
 												</div>
 											</div>
@@ -950,14 +1033,16 @@
 							<div class="pbmit-footer-logo">
 								<img src="images/Operify-Logo-White.png" alt="">
 							</div>
-							<div class="pbmit-footer-address" style="margin-top: 15px; font-size: 18px; line-height: 1.5; color: white; font-family: 'Open Sans', sans-serif !important; margin-left: 20px;">
-								<a href="https://maps.google.com/?q=Operify+Tech+Pvt+Ltd,+64-65+Satguru+Ram+Singh+Ji+Marg,+Kirti+Nagar+Industrial+Area,+New+Delhi+110015" target="_blank" style="color: white; text-decoration: none;">
-								  Operify Tech Pvt. Ltd.<br>
-								  64-65, Satguru Ram Singh Ji Marg<br>
-								  Kirti Nagar Industrial Area<br>
-								  New Delhi - 110015
+							<div class="pbmit-footer-address"
+								style="margin-top: 15px; font-size: 18px; line-height: 1.5; color: white; font-family: 'Open Sans', sans-serif !important; margin-left: 20px;">
+								<a href="https://maps.google.com/?q=Operify+Tech+Pvt+Ltd,+64-65+Satguru+Ram+Singh+Ji+Marg,+Kirti+Nagar+Industrial+Area,+New+Delhi+110015"
+									target="_blank" style="color: white; text-decoration: none;">
+									Operify Tech Pvt. Ltd.<br>
+									64-65, Satguru Ram Singh Ji Marg<br>
+									Kirti Nagar Industrial Area<br>
+									New Delhi - 110015
 								</a>
-							  </div>
+							</div>
 						</div>
 						<div class="pbmit-footer-widget-col-3 col-md-3">
 							<div class="widget widget_text">
@@ -1001,13 +1086,19 @@
 								<h2 class="widget-title">Contact Details</h2>
 								<div class="pbmit-contact-widget-lines">
 									<div class="pbmit-contact-widget-line pbmit-base-icon-phone">
-										<a href="tel:+01143046242" style="font-family: 'Open Sans', sans-serif; font-size: 14px; color: white;"> 01143046242 </a>
+										<a href="tel:+01143046242"
+											style="font-family: 'Open Sans', sans-serif; font-size: 14px; color: white;">
+											01143046242 </a>
 									</div>
 									<div class="pbmit-contact-widget-line pbmit-base-icon-phone">
-										<a href="tel:+9319171176" style="font-family: 'Open Sans', sans-serif; font-size: 14px; color: white;"> 9319171176 </a>
+										<a href="tel:+9319171176"
+											style="font-family: 'Open Sans', sans-serif; font-size: 14px; color: white;">
+											9319171176 </a>
 									</div>
 									<div class="pbmit-contact-widget-line pbmit-base-icon-email">
-										<a href="mailto:info@operifytech.com" style="font-family: 'Open Sans', sans-serif; font-size: 14px; color: white;"> Info@operifytech.com </a>
+										<a href="mailto:info@operifytech.com"
+											style="font-family: 'Open Sans', sans-serif; font-size: 14px; color: white;">
+											Info@operifytech.com </a>
 									</div>
 								</div>
 							</aside>
@@ -1027,7 +1118,8 @@
 											</a>
 										</li>
 										<li class="pbmit-social-li pbmit-social-linkedin">
-											<a title="LinkedIn" href="https://www.linkedin.com/company/operify-tech/" target="_blank">
+											<a title="LinkedIn" href="https://www.linkedin.com/company/operify-tech/"
+												target="_blank">
 												<span><i class="pbmit-base-icon-linkedin-in"></i></span>
 											</a>
 										</li>

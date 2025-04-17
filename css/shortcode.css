@@ -2978,7 +2978,7 @@
 /*----------------------------------------*/
 .pbmit-title-bar-wrapper{
 	background-color: rgba(0,0,0,0.5);
-	background-image: url(../images/bg/titlebar.jpg);
+	background-image: url(../images/homepage-2/ContactUs-Banner.png);
 	background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -3538,10 +3538,10 @@
 	background: url(../images/banner-slider-img/slider-3-sahpe.png) 50% 50% / cover no-repeat transparent;
 }
 .pbmit-slider-three .pbmit-slider-content .pbmit-title{
-	font-size: 88px;
+	font-size: 68px;
 	line-height: 88px;
 	font-weight: 900;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 .pbmit-slider-three .pbmit-sub-title{
 	opacity: 0;
