@@ -2071,7 +2071,7 @@ body {
 		padding: 0 70px;
 	}
 	.header-style-2 .site-header-menu:not(.sticky-header) .site-navigation ul.navigation > li:not(.active) > a{
-		color: var(--pbmit-white-color);
+		color: var(--pbmit-global-color);
 	}
 	.header-style-2 .pbmit-menuarea,
 	.header-style-2 .pbmit-right-box{

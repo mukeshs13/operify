@@ -2728,7 +2728,7 @@
 	color: rgba(var(--pbmit-white-color-rgb), .8);
 }
 .header-style-2 .sticky-header .site-branding .logo-img{
-	display: none;
+	display: inline-block;
 }
 .site-header.header-style-2 .sticky-header .pbmit-header-button a:hover{
 	color: var(--pbmit-global-color);
